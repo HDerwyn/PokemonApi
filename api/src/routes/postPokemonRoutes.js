@@ -1,9 +1,8 @@
 const { Router } = require("express");
 
-const {postPokeHandler} = require("/api/src/handlers/postPokemonHandlers")
+const  postPokeHandler  = require("./../handlers/postPokemonHandlers.js");
 
 const postPokemonRouter = Router();
-
 
 
 postPokemonRouter.post("/", postPokeHandler);
